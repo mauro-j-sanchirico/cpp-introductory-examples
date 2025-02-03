@@ -10,9 +10,7 @@
 int main()
 {
 
-    /**
-     * std::cout
-     */
+    // std::cout
 
     // The iostream library contains a few pre-defined variables for us to use.
     // One of the most useful is std::cout. This allows us to send data to the
@@ -41,9 +39,7 @@ int main()
     // which is periodically flushed. This is more efficient than incurring the
     // overhead of pushing each to the console individually.
 
-    /**
-     * std::endl vs. \n
-     */
+    // std::endl vs. \n
 
     // std::endl prints a new line and flushes the buffer. The \n character is
     // only a new line. Flushing the buffer is slow, so \n is used if
@@ -56,9 +52,7 @@ int main()
     // Print a new line
     std::cout << "Print a new line..." << std::endl;
 
-    /**
-     * std::cin
-     */
+    // std::cin
 
     // std::cin is another predefined variable in the iostream library. Whereas
     // std::cout prints data to the console (using the insertion operator <<

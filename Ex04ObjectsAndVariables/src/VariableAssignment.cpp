@@ -2,16 +2,12 @@
 
 int main()
 {
-    /**
-     * Variables
-     */
+    // Variables
 
     int x;    // Define an integer named x
     int y, z; // Define two integer variables
 
-    /**
-     * Assignment
-     */
+    // Assignment
 
     // Note that the = operator is an assignment operator, not an equals sign
     x = 0;
@@ -20,9 +16,7 @@ int main()
 
     std::cout << x << y << z << std::endl;
 
-    /**
-     * Variable Initialization
-     */
+    // Variable Initialization
 
     // A basic initialization
     int width; // Define an integer, width
@@ -31,23 +25,21 @@ int main()
     width = 7;
     std::cout << width << std::endl;
 
-    /**
-     * Initialization is surprisingly complex in C++. There are 5 types of
-     * basic initialization.
-     *
-     * 1) Default-initialization
-     * 2) Traditional: copy-initialization
-     * 3) Traditional: direct-initialization
-     * 4) Modern: direct-list-initialization
-     * 5) Modern: value-initialization
-     *
-     * Other more advanced forms of initialization include:
-     *  - Aggregate-initialization
-     *  - Copy-list-initialization
-     *  - Reference-initialization
-     *  - Static-initialization
-     *  - Zero-initialization
-     */
+    // Initialization is surprisingly complex in C++. There are 5 types of
+    // basic initialization.
+
+    // 1) Default-initialization
+    // 2) Traditional: copy-initialization
+    // 3) Traditional: direct-initialization
+    // 4) Modern: direct-list-initialization
+    // 5) Modern: value-initialization
+
+    // Other more advanced forms of initialization include:
+    //  - Aggregate-initialization
+    //  - Copy-list-initialization
+    //  - Reference-initialization
+    //  - Static-initialization
+    //  - Zero-initialization
 
     // Default-initialization
     //
@@ -140,9 +132,7 @@ int main()
     // Always initialize your variables! Rare exceptions include performance
     // critical code where many variables are used.
 
-    /**
-     * Multiple Initialization
-     */
+    // Multiple Initialization
 
     // This is bad practice
     int i, j;
@@ -155,9 +145,7 @@ int main()
 
     std::cout << i << j << k << l << m << n << o << p << std::endl;
 
-    /**
-     * C++17 [[maybe_unused]] attribute
-     */
+    // C++17 [[maybe_unused]] attribute
 
     // The compiler will throw a warning for an unused variable. If warnings
     // are treated as errors, the program will not compile. If there is a valid

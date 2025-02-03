@@ -22,17 +22,14 @@ void doNothing(int &)
 
 int main()
 {
-    /**
-     * Undefined Behavior Example
-     */
+    // Undefined Behavior Example
+
     int x;
     doNothing(x);
     // Notice this value is different on every run of the program!
     std::cout << "The garbage value of x is " << x << std::endl;
 
-    /**
-     * Implementation Defined Behavior Example
-     */
+    // Implementation Defined Behavior Example
 
     // Implementation defined behavior is that which is specific to a given
     // compiler. The following code may produce 2 bytes on some platforms and
