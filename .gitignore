@@ -1,3 +1,11 @@
+# Binaries
+*/bin
+*/bin/*
+
+# Objects
+*/obj
+*/obj/*
+
 # Prerequisites
 *.d
 
