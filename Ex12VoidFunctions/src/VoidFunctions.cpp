@@ -1,11 +1,11 @@
-#include <iostream>
-
 /**
  * Functions do not need to return a value to the caller. To tell the compiler
  * that a function does not return a value, a return type of void is used. A
  * function that does not return a value is called a *non-value returning
  * function* or a *void function*.
  */
+
+#include <iostream>
 
 // Function that does not return a value
 void returnNothing()

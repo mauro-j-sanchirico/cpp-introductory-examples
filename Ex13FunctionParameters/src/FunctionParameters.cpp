@@ -1,5 +1,3 @@
-#include <iostream>
-
 /**
  * A *function parameter* is a variable used in the header of a function.
  * Function parameters work almost identically to variables defined inside a
@@ -17,6 +15,8 @@
  * Note: parameters are the variables the function creates to hold data from
  * the caller. Arguments are the values the caller passes to the callee.
  */
+
+#include <iostream>
 
 // Get a value from the user and return it
 int getValueFromUser()

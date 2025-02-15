@@ -1,5 +1,3 @@
-#include <iostream>
-
 /**
  * A *function* is a reusable sequence of statements designed to do a job.
  *
@@ -25,6 +23,8 @@
  * *called* is the *callee*. A function call can also be called an *invocation*
  * and it is common to say "invoke the function".
  */
+
+#include <iostream>
 
 // Definition of a user-defined function doPrint()
 // doPrint() is the called function in this example

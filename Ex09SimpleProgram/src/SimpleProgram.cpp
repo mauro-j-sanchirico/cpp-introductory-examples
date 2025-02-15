@@ -7,9 +7,11 @@ int main()
     int num{};
     std::cin >> num;
 
-    // Here we use an expression to multiply the number inline. If all we need
-    // to do is print the number, it is preferable to multiply it inline rather
-    // than create another variable or reuse the first variable.
+    /**
+     * Here we use an expression to multiply the number inline. If all we need
+     * to do is print the number, it is preferable to multiply it inline rather
+     * than create another variable or reuse the first variable.
+     */
     std::cout << "Double that number is: " << num * 2 << '\n';
 
     return 0;

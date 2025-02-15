@@ -1,5 +1,3 @@
-#include <iostream>
-
 /**
  * The definition of a function sets its *return type*. This is the type of the
  * value that will be returned by the function. A return type of void means the
@@ -12,6 +10,8 @@
  * The value produced by the return expression is copied back to the caller.
  * The copy is called the return value.
  */
+
+#include <iostream>
 
 int getValueFromUser() // This tells the compiler the function will return int
 {
