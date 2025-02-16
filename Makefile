@@ -13,7 +13,7 @@
 #     > make clean
 # =============================================================================
 
-SUBDIRS_WITH_MAKEFILE:=$(wildcard */Makefile)
+SUBDIRS_WITH_MAKEFILE:=$(wildcard */*/Makefile)
 SUBDIRS_WITH_MAKEFILE:=$(dir $(SUBDIRS_WITH_MAKEFILE))
 
 # Main build all recipe
