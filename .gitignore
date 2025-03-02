@@ -1,6 +1,8 @@
 # Binaries
 */bin
 */bin/*
+*/*/bin
+*/*/bin/*
 
 # Objects
 */obj

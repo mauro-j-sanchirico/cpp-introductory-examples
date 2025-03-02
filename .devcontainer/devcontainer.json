@@ -1,5 +1,5 @@
 {
-    "name": "ubuntu-cuda-dev",
+    "name": "ubuntu-cpp-and-python",
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
@@ -13,7 +13,7 @@
     "remoteUser": "developer",
     "containerUser": "developer",
     "waitFor": "onCreateCommand",
-    "onCreateCommand": "sudo bash .devcontainer/configure_environment.sh",
+    "onCreateCommand": "bash .devcontainer/configure_environment.sh",
     "postAttachCommand": "bash .devcontainer/post_attach.sh",
     "customizations": {
         "codespaces": {

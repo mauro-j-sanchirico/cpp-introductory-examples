@@ -8,15 +8,13 @@
 #
 # Usage:
 #
-# sudo bash ./configure_environment.sh
+# bash ./configure_environment.sh
 #
 # =============================================================================
 
 # ===================
 # Basic configuration
 # ===================
-
-export DEBIAN_FRONTEND=noninteractive
 
 source .devcontainer/user_info.sh
 
@@ -26,9 +24,9 @@ source .devcontainer/user_info.sh
 
 echo "Installing basic packages..."
 
-apt-get -y update \
-&& apt-get install -yq curl vim git npm lshw build-essential make cmake gdb valgrind cppcheck \
-&& apt-get clean
+sudo apt-get -y update \
+&& sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq curl vim git npm lshw build-essential make cmake gdb valgrind cppcheck \
+&& sudo apt-get clean
 
 if [ $? -eq 0 ]; then
     echo "Basic packages installed!"
@@ -133,7 +131,7 @@ echo "source $developer_home/.bashrc" >> "$developer_home/.profile"
 echo "Installing Poetry..."
 
 poetry_install_command="curl -sSL https://install.python-poetry.org | python3 -"
-sudo -u "$user_name" bash -c "$poetry_install_command"
+bash -c "$poetry_install_command"
 
 if "$poetry_command" --version &>/dev/null; then
     echo "Poetry installed!"
