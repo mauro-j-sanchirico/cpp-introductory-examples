@@ -20,6 +20,19 @@ A basic Python environment managed with Poetry is also provided to enable using 
 
 ## Usage
 
+### VS Code Configuration
+
+If using VS Code to view and edit the examples, it may be desirable to have the following extensions:
+* "ms-vscode.cpptools"
+* "ms-vscode.cpptools-extension-pack"
+* "ms-vscode.makefile-tools"
+* "ms-python.python",
+* "ms-toolsai.jupyter"
+
+If using intellisense with the ms-vscode-cpptools extension, it may be necessary to change the C++ standard that intellisense uses. To do this, follow the instructions [here](https://code.visualstudio.com/docs/cpp/configure-intellisense).
+
+Access the `.vscode/c_cpp_properties.json` file in the workspace and change any occurrences of an older C++ standard to gnu++20 or another desired standard.
+
 ### Building All Examples
 
 To build all examples use the recipe in the top level Makefile.
