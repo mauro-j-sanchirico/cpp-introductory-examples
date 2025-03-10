@@ -8,8 +8,6 @@ auto main() -> int
     auto v1 = std::vector<int>{};
     auto v2 = std::vector<int>{};
 
-    v2.reserve(n);
-
     // Inserting elements without reserve()
     auto start = std::chrono::high_resolution_clock::now();
     for (auto i = int{0}; i < n; ++i)
@@ -22,6 +20,7 @@ auto main() -> int
     std::cout << "Time to push elements to unreserved memory vector: " << duration << " ms" << std::endl;
 
     start = std::chrono::high_resolution_clock::now();
+    v2.reserve(n);
     for (auto i = int{0}; i < n; ++i)
     {
         v2.push_back(2);
